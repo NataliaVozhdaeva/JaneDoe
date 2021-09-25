@@ -1,0 +1,35 @@
+{
+  "name": "janedoe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NataliaVozhdaeva/JaneDoe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NataliaVozhdaeva/JaneDoe/issues"
+  },
+  "homepage": "https://github.com/NataliaVozhdaeva/JaneDoe#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.5",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss": "^8.3.7",
+    "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
