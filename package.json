@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build"
+    "start": "cross-env NODE_ENV=development gulp",
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "repository": {
     "type": "git",
@@ -18,16 +18,24 @@
   },
   "homepage": "https://github.com/NataliaVozhdaeva/JaneDoe#readme",
   "devDependencies": {
-    "autoprefixer": "^10.3.5",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "autoprefixer": "^10.3.6",
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.27.5",
+    "cross-env": "^7.0.3",
     "cssnano": "^5.0.8",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.3.7",
-    "sass": "^1.42.1"
+    "postcss": "^8.3.8",
+    "sass": "^1.42.1",
+    "webpack": "^5.54.0",
+    "webpack-stream": "^7.0.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"

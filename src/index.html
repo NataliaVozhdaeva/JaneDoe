@@ -121,17 +121,17 @@
         <section class="slider"><a name="slider"></a>
             <form>
             <div class="slider__pics">
-                <div class="arrow left"></div>
-                <div class="arrow right"></div>
+                <div class="arrow left" onclick="minusSlide()"></div>
+                <div class="arrow right" onclick="plusSlide()"></div>
 
                 <input class="sliderRadio" type="radio" name="slider" checked/>
-                <img src="pic/slider1.png" />
+                <img src="pic/slider1.png" class="item" alt="Картинка с морем. Красивым таким. Прибой прям, пена, вот это все... Жаль, что что-то пошло не так, и вам не видно..." />
 
                 <input class="sliderRadio" type="radio" name="slider"  />
-                <img src="pic/slider2.png" />
+                <img src="pic/slider2.png" class="item" alt="Картинка с лесом. Густым, зеленым. И туман такой сверху." />
 
                 <input class="sliderRadio" type="radio" name="slider"  />
-                <img src="pic/slider3.png" />
+                <img src="pic/slider3.png" class="item" alt="Картинка с горами. Они и сами такие высокие, а точка съемки еще выше. И облака такие ниже вершин." />
 
                 <h1 class="slider__header">Slide this photo</h1>
                 <p class="slider__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
@@ -147,12 +147,12 @@
                 <div class="mobileArrow right"></div>
 
                 <input class="mobileSliderRadio" type="radio" name="slider" checked/>
-                <img src="pic/sliderMobile1.png" />
+                <img src="pic/sliderMobile1.png" alt="Картинка с морем. Красивым таким. Прибой прям, пена, вот это все..." />
 
-                <input class="mobileSliderRadio" type="radio" name="slider"  />
+                <input class="mobileSliderRadio" type="radio" name="slider" alt="Картинка с лесом. Густым, зеленым. И туман такой сверху." />
                 <img src="pic/sliderMobile2.png" />
 
-                <input class="mobileSliderRadio" type="radio" name="slider"  />
+                <input class="mobileSliderRadio" type="radio" name="slider" alt="Картинка с горами. Они и сами такие высокие, а точка съемки еще выше. И облака такие ниже вершин." />
                 <img src="pic/sliderMobile3.png" />
 
                 <h1 class="mobileSlider__header">Slide this photo</h1>
@@ -164,8 +164,7 @@
 
     </main>  
     </div> 
-    <!--<script type="text/javascript" src="main.js"></script> -->
+    <!--<script type="text/javascript" src="js/main.js"></script>-->
   </body>
 
 </html>  
-

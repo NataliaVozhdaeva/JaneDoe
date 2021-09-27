@@ -1,3 +1,6 @@
-view
-node_modules
-dist
+/view
+/node_modules
+/dist
+/src/css
+/src/js/main.min.js
+/src/js/main.js
