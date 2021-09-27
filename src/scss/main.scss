@@ -513,6 +513,31 @@ h1{
     overflow:hidden;
   }
 
+  .arrow{
+    width: 18px;
+    height: 18px;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    position: absolute;
+    top:50%;
+    z-index: 2;
+    cursor: pointer;
+    }
+   
+  .left{
+    left: 32px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    margin-left: 32px;
+  }
+
+  .right{
+    right: 32px;
+    transform: rotate(135deg);
+    transform-origin: 100% 50%;
+    margin-right: 32px;
+  }
+
   &__pics > img{
     width: 1312px; 
     height: 535px;
@@ -593,7 +618,7 @@ h1{
   .mobileSlider{
     display: block;
     background-color: #fff;
-    padding-top: 32px 13px;
+    padding: 32px 13px;
     position:relative;
 
     &__pics{
@@ -603,6 +628,32 @@ h1{
       margin:20px auto;
       overflow:hidden;
     }
+
+    .mobileArrow{
+      width: 20px;
+      height: 20px;
+      border-top: 4px solid #fff;
+      border-left: 4px solid #fff;
+      position: absolute;
+      bottom: 32px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .left{
+      left: 32px;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+      margin-left: 32px;
+    }
+  
+    .right{
+      right: 32px;
+      transform: rotate(135deg);
+      transform-origin: 100% 50%;
+      margin-right: 32px;
+    }
+  
   
     &__pics > img{
       width: 346px; 
