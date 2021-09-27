@@ -56,18 +56,18 @@
         
         <div class="formContainer"><a name="formField"></a>
             <h2>Tell us about yourself</h2>
-
+            
             <form class="form" action="" method="post" enctype="multipart/form-data">
                 <div class="form__fieldContainer" style="grid-area:userName">
-                    <label for="userName">Your name</label>
+                    <label for="userName">Your name*</label>
                     <br>
-                    <input type="text" name="userName" id="userName" class="form__field" placeholder="Tell us your name">
+                    <input required type="text" name="userName" id="userName" pattern="[A-Za-zА-Яа-яЁё]+$" class="form__field" placeholder="Tell us your name">
                 </div>
 
                 <div class="form__fieldContainer" style="grid-area:userGender"> 
-                    <label for="userGender">Your gender</label>
+                    <label for="userGender">Your gender*</label>
                     <br>        
-                    <input name="userGender" class="form__field" id="userGender" placeholder="Chose your gender" list="gender">
+                    <input required name="userGender" class="form__field" id="userGender" placeholder="Chose your gender" list="gender">
                         <datalist id="gender">
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
@@ -75,40 +75,41 @@
                         </datalist> 
                 </div>
                 
-                <div class="form__fieldContainer" style="grid-area:userCountry">
+                <div class="form__fieldContainer disabled" style="grid-area:userCountry">
                     <label for="userCountry">Your country</label>
                     <br>
                     <input type="text" name="userCountry" id="userCountry" class="form__field" placeholder="Where ara you from">
                 </div>
 
-                <div class="form__fieldContainer" style="grid-area:userCity">
+                <div class="form__fieldContainer disabled" style="grid-area:userCity">
                     <label for="userCity">Your City</label>
                     <br>
                     <input type="text" name="userCity" id="userCity" class="form__field" placeholder="Your native city">
                 </div>
 
-                <div class="form__fieldContainer" style="grid-area:userBirthday">
-                    <label for="userBirthday">Your date of birth</label>
+                <div class="form__fieldContainer disabled" style="grid-area:userBirthday">
+                    <label for="userBirthday">Your date of birth*</label>
                     <br>
-                    <input type="text" name="userBirthday" id="userBirthday" class="form__field" 
-                    placeholder="dd.mm.yyyy" pattern="(0[1-9]|[12][0-9]|3[01])[.](0[1-9]|1[012])[.](19|20)\d\d">
+                    <input require type="text" name="userBirthday" id="userBirthday" class="form__field" 
+                    placeholder="dd.mm.yyyy" value='дд.мм.гггг'
+                    pattern="(0[1-9]|[12][0-9]|3[01])[.](0[1-9]|1[012])[.](19|20)\d\d">
                 </div>
 
-                <div class="form__fieldContainer form__fieldContainer_forFile" style="grid-area:userDocument">
+               <div class="form__fieldContainer form__fieldContainer_forFile disabled" style="grid-area:userDocument">
                     <input type="file" name="userDocument" id="userDocument" class="form__field form__field_big">
                     <label for="userDocument" class="field__fileContainer">
-                       <span class="fileButtonText">Proof your identity with some documents </span>
+                       <span class="fileButtonText">Proof your identity with some documents* </span>
                        <div class="form__field form__field_small small_mobile">Add document</div>
                     </label>
-                </div>
+                </div> 
 
-                <div class="form__field getDocument" style="grid-area:getDocument">
+                <!--<div class="form__field getDocument" style="grid-area:getDocument">
                     <img src="pic/preview.png" />
                     <span class="fileName">File_name_001</span><span class="fileSize">JPG_25mb</span>
                     <i class="fa fa-trash"></i>
-                </div>
+                </div>-->
                 
-                <button type="submit" class="btn btn_submit form__field_small" style="grid-area:submit">
+                <button type="submit" id="submitBtn" class="btn btn_submit form__field_small" style="grid-area:submit">
                     Send info
                 </button>
                 <div class="form__checkboxContainer" style="grid-area:checkbox">
@@ -121,8 +122,8 @@
         <section class="slider"><a name="slider"></a>
             <form>
             <div class="slider__pics">
-                <div class="arrow left" onclick="minusSlide()"></div>
-                <div class="arrow right" onclick="plusSlide()"></div>
+                <div class="arrow left"></div>
+                <div class="arrow right"></div>
 
                 <input class="sliderRadio" type="radio" name="slider" checked/>
                 <img src="pic/slider1.png" class="item" alt="Картинка с морем. Красивым таким. Прибой прям, пена, вот это все... Жаль, что что-то пошло не так, и вам не видно..." />
@@ -138,8 +139,8 @@
                 </p>
             </div>
             </form>
-        </section>
-
+        </section>  
+        
        <section class="mobileSlider">
             <form>
             <div class="mobileSlider__pics">
@@ -164,7 +165,7 @@
 
     </main>  
     </div> 
-    <!--<script type="text/javascript" src="js/main.js"></script>-->
+    <script src="js/main.min.js"></script>
   </body>
 
 </html>  

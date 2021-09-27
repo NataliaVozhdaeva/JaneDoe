@@ -245,6 +245,10 @@ h1{
                        "submit       checkbox     .";
   gap: 40px 32px;
 
+  .disabled{
+    display:none;
+  }
+
   &__field{
     width: 304px;
     height: 56px;
@@ -289,7 +293,6 @@ h1{
       transform: rotate(-45deg);
     } */
   }
-
 
   &__fieldContainer_forFile,
   &__fieldContainer{
@@ -368,6 +371,10 @@ h1{
     background: #DED9E4;
     border-radius: 12px;
     color: #fff;
+  }
+
+  .btn_active{
+    background-color: #8E43ED;
   }
 
   &__checkboxContainer{
@@ -726,7 +733,5 @@ h1{
       color:#fff;
       z-index: 2;
     }
-
-
   }
 }
