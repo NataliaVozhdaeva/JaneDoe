@@ -55,6 +55,11 @@ document.getElementById('userDocument').addEventListener('change', function(){
       let trash = document.createElement('i');
       trash.className ='fa fa-trash';
       element.append(trash);
+
+      if(window.screen.width<=375){
+        submitBtn.removeAttribute('disabled');
+        submitBtn.classList.add('btn_active');
+        }
     } else { 
       alert( "Файл не выбран" ); 
     }
@@ -65,7 +70,10 @@ checkbox.onclick = function(){
     if (checkbox.checked) { 
         submitBtn.removeAttribute('disabled');
         submitBtn.classList.add('btn_active');
-    } else { alert("поставьте галочку"); }
+    } else { alert("поставьте галочку"); 
+    }
+
+
 }
 
 window.addEventListener("load", initiate, false);
